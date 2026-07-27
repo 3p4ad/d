@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shorsh Restaurant | مطعم شورش</title>
+
+    <meta name="description"
+        content="مطعم شورش - أشهى المأكولات العربية والشرقية والغربية والمشروبات والحلويات">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= Loader ================= -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+            <i class="fa-solid fa-utensils"></i>
+        </div>
+
+        <h1 class="loader-title"
+            data-ckb="چێشتخانەی شۆڕش"
+            data-ar="مطعم شورش"
+            data-en="Shorsh Restaurant">
+            چێشتخانەی شۆڕش
+        </h1>
+
+        <div class="loading-bar">
+
+            <span id="progressBar"></span>
+
+        </div>
+
+        <p id="loadingPercent">0%</p>
+
+    </div>
+
+</div>
+
+<!-- ================= Header ================= -->
+<button id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<header id="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-utensils"></i>
+
+<h2
+data-ckb="شۆڕش"
+data-ar="شورش"
+data-en="Shorsh">
+شۆڕش
+</h2>
+
+</div>
+
+
+<nav id="navMenu">
+
+<a href="#home">
+
+<i class="fa-solid fa-house"></i>
+
+<span
+data-ckb="سەرەکی"
+data-ar="الرئيسية"
+data-en="Home">
+سەرەکی
+</span>
+
+</a>
+
+<a href="#about">
+
+<i class="fa-solid fa-circle-info"></i>
+
+<span
+data-ckb="دەربارەی ئێمە"
+data-ar="من نحن"
+data-en="About">
+دەربارەی ئێمە
+</span>
+
+</a>
+
+<a href="#menu">
+
+<i class="fa-solid fa-book-open"></i>
+
+<span
+data-ckb="مینوو"
+data-ar="المنيو"
+data-en="Menu">
+مینوو
+</span>
+
+</a>
+
+<a href="#gallery">
+
+<i class="fa-solid fa-images"></i>
+
+<span
+data-ckb="گەلەری"
+data-ar="المعرض"
+data-en="Gallery">
+گەلەری
+</span>
+
+</a>
+
+<a href="#videos">
+
+<i class="fa-solid fa-video"></i>
+
+<span
+data-ckb="ڤیدیۆکان"
+data-ar="الفيديوهات"
+data-en="Videos">
+ڤیدیۆکان
+</span>
+
+</a>
+
+
+<a href="#contact">
+
+<i class="fa-solid fa-phone"></i>
+
+<span
+data-ckb="پەیوەندی"
+data-ar="اتصل بنا"
+data-en="Contact">
+پەیوەندی
+</span>
+
+</a>
+
+</nav>
+
+<div class="header-tools">
+
+<select id="language">
+
+<option value="ckb">کوردی</option>
+
+<option value="ar">العربية</option>
+
+<option value="en">English</option>
+
+</select>
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+</div>
+
+</header>
+
+<!-- ================= Main ================= -->
+
+<main>
+
+
+
+    <!-- ================= Hero Section ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-overlay">
+
+        <div class="hero-content">
+
+            <h1
+                data-ckb="بەخێربێن بۆ چێشتخانەی شۆڕش"
+                data-ar="أهلاً بكم في مطعم شورش"
+                data-en="Welcome to Shorsh Restaurant">
+                بەخێربێن بۆ چێشتخانەی شۆڕش
+            </h1>
+
+            <p
+                data-ckb="باشترین خواردنی عەرەبی، ڕۆژهەڵاتی، ڕۆژئاوایی و شیرینییەکان بە کوالێتی بەرز."
+                data-ar="أفضل المأكولات العربية والشرقية والغربية والحلويات والمشروبات الطازجة."
+                data-en="Enjoy the finest Arabic, Eastern, Western dishes, desserts and fresh drinks.">
+                باشترین خواردنی عەرەبی، ڕۆژهەڵاتی، ڕۆژئاوایی و شیرینییەکان بە کوالێتی بەرز.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="btn primary"
+                    data-ckb="بینینی مینوو"
+                    data-ar="عرض المنيو"
+                    data-en="View Menu">
+                    بینینی مینوو
+                </a>
+
+                <a href="#contact" class="btn secondary"
+                    data-ckb="پەیوەندی"
+                    data-ar="اتصل بنا"
+                    data-en="Contact Us">
+                    پەیوەندی
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= About ================= -->
+
+<section id="about" class="about">
+
+    <div class="section-title">
+
+        <h2
+            data-ckb="دەربارەی ئێمە"
+            data-ar="من نحن"
+            data-en="About Us">
+            دەربارەی ئێمە
+        </h2>
+
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <p
+                data-ckb="چێشتخانەی شۆڕش شوێنێکە بۆ ئەوانەی حەزیان لە خواردنی تازە و خۆشەویستە. ئێمە هەموو ڕۆژێک بە باشترین ماددەی خواردن چێشتەکان ئامادە دەکەین."
+                data-ar="مطعم شورش يقدم أشهى المأكولات العربية والشرقية والغربية باستخدام مكونات طازجة وجودة عالية لنمنحكم تجربة لا تنسى."
+                data-en="Shorsh Restaurant serves delicious Arabic, Eastern and Western dishes prepared daily with fresh ingredients and premium quality.">
+                چێشتخانەی شۆڕش شوێنێکە بۆ ئەوانەی حەزیان لە خواردنی تازە و خۆشەویستە.
+            </p>
+
+            <a href="about.html"
+               class="btn primary"
+               data-ckb="زیاتر"
+               data-ar="المزيد"
+               data-en="Read More">
+                زیاتر
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= News Bar ================= -->
+
+<section class="news-bar">
+
+    <div class="news-track">
+
+        <span
+            data-ckb="بەخێربێن بۆ چێشتخانەی شۆڕش"
+            data-ar="أهلاً بكم في مطعم شورش"
+            data-en="Welcome to Shorsh Restaurant">
+            بەخێربێن بۆ چێشتخانەی شۆڕش
+        </span>
+
+        <span
+            data-ckb="باشترین خواردنی عەرەبی و ڕۆژهەڵاتی و ڕۆژئاوایی"
+            data-ar="نقدم أشهى المأكولات العربية والشرقية والغربية"
+            data-en="Enjoy delicious Arabic, Eastern and Western cuisine">
+            باشترین خواردنی عەرەبی و ڕۆژهەڵاتی و ڕۆژئاوایی
+        </span>
+
+        <span
+            data-ckb="هەموو خواردنەکان بە تازەیی ئامادە دەکرێن"
+            data-ar="جميع الوجبات تُحضّر يومياً بمكونات طازجة"
+            data-en="Fresh ingredients prepared every day">
+            هەموو خواردنەکان بە تازەیی ئامادە دەکرێن
+        </span>
+
+        <span
+            data-ckb="خزمەتگوزاری خێرا و کوالێتی بەرز"
+            data-ar="خدمة سريعة وجودة عالية"
+            data-en="Fast service and premium quality">
+            خزمەتگوزاری خێرا و کوالێتی بەرز
+        </span>
+
+        <span
+            data-ckb="سوپاس بۆ متمانەتان"
+            data-ar="شكراً لثقتكم بنا"
+            data-en="Thank you for choosing us">
+            سوپاس بۆ متمانەتان
+        </span>
+
+    </div>
+
+</section>
+
+<!-- ================= Gallery ================= -->
+
+<section id="gallery" class="gallery">
+
+    <div class="section-title">
+
+        <h2
+            data-ckb="گەلەری"
+            data-ar="المعرض"
+            data-en="Gallery">
+            گەلەری
+        </h2>
+
+        <p
+            data-ckb="هەندێک وێنە لە چێشت و ناوەوەی چێشتخانە."
+            data-ar="مجموعة من صور المطعم والأطباق."
+            data-en="A collection of restaurant and food photos.">
+            هەندێک وێنە لە چێشت و ناوەوەی چێشتخانە.
+        </p>
+
+    </div>
+
+    <div class="gallery-slider">
+
+        <button class="gallery-btn prev">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="gallery-track">
+
+            <img src="images/gallery/1.jpg" alt="Gallery 1">
+            <img src="images/gallery/2.jpg" alt="Gallery 2">
+            <img src="images/gallery/3.jpg" alt="Gallery 3">
+            <img src="images/gallery/4.jpg" alt="Gallery 4">
+            <img src="images/gallery/5.jpg" alt="Gallery 5">
+            <img src="images/gallery/6.jpg" alt="Gallery 6">
+            <img src="images/gallery/7.jpg" alt="Gallery 7">
+            <img src="images/gallery/8.jpg" alt="Gallery 8">
+            <img src="images/gallery/9.jpg" alt="Gallery 9">
+            <img src="images/gallery/10.jpg" alt="Gallery 10">
+            <img src="images/gallery/11.jpg" alt="Gallery 11">
+            <img src="images/gallery/12.jpg" alt="Gallery 12">
+
+        </div>
+
+        <button class="gallery-btn next">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= Working Hours ================= -->
+
+<section id="hours" class="working-hours">
+
+    <div class="section-title">
+
+        <h2
+            data-ckb="کاتی کارکردن"
+            data-ar="أوقات الدوام"
+            data-en="Working Hours">
+            کاتی کارکردن
+        </h2>
+
+    </div>
+
+    <div class="hours-container">
+
+        <div class="hour-card">
+
+            <h3
+                data-ckb="شەممە - پێنجشەممە"
+                data-ar="السبت - الخميس"
+                data-en="Saturday - Thursday">
+                شەممە - پێنجشەممە
+            </h3>
+
+            <p>10:00 AM - 12:00 AM</p>
+
+        </div>
+
+        <div class="hour-card">
+
+            <h3
+                data-ckb="هەینی"
+                data-ar="الجمعة"
+                data-en="Friday">
+                هەینی
+            </h3>
+
+            <p>12:00 PM - 01:00 AM</p>
+
+        </div>
+
+        <div class="hour-card status-card">
+
+            <h3
+                data-ckb="دۆخی چێشتخانە"
+                data-ar="حالة المطعم"
+                data-en="Restaurant Status">
+                دۆخی چێشتخانە
+            </h3>
+
+            <p id="restaurantStatus">
+                🟢
+                <span
+                    data-ckb="کراوەیە"
+                    data-ar="مفتوح الآن"
+                    data-en="Open Now">
+                    کراوەیە
+                </span>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Videos ================= -->
+
+<section id="videos" class="videos">
+
+    <div class="section-title">
+
+        <h2
+            data-ckb="ڤیدیۆکان"
+            data-ar="الفيديوهات"
+            data-en="Videos">
+            ڤیدیۆکان
+        </h2>
+
+        <p
+            data-ckb="بینینی ڤیدیۆی خواردن و ناوەوەی چێشتخانە."
+            data-ar="شاهد فيديوهات من المطعم والأطباق المميزة."
+            data-en="Watch videos from our restaurant and signature dishes.">
+            بینینی ڤیدیۆی خواردن و ناوەوەی چێشتخانە.
+        </p>
+
+    </div>
+
+    <div class="video-grid">
+
+        <div class="video-card">
+            <video controls poster="images/video1.jpg">
+                <source src="videos/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-card">
+            <video controls poster="images/video2.jpg">
+                <source src="videos/video2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-card">
+            <video controls poster="images/video3.jpg">
+                <source src="videos/video3.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Menu ================= -->
+
+<section id="menu" class="menu-preview">
+
+    <div class="section-title">
+
+        <h2
+            data-ckb="مینوو"
+            data-ar="المنيو"
+            data-en="Menu">
+            مینوو
+        </h2>
+
+        <p
+            data-ckb="چەند خواردنێکی هەڵبژێردراو لە مینووی ئێمە."
+            data-ar="مجموعة مختارة من أشهى أطباقنا."
+            data-en="A selection of our most popular dishes.">
+            چەند خواردنێکی هەڵبژێردراو لە مینووی ئێمە.
+        </p>
+
+    </div>
+
+    <div class="menu-preview-grid">
+
+        <div class="food-card">
+
+            <img src="images/menu/1.jpg" alt="Food">
+
+            <h3>كباب عراقي</h3>
+
+            <span class="price">$8</span>
+
+        </div>
+
+        <div class="food-card">
+
+            <img src="images/menu/2.jpg" alt="Food">
+
+            <h3>شاورما</h3>
+
+            <span class="price">$6</span>
+
+        </div>
+
+        <div class="food-card">
+
+            <img src="images/menu/3.jpg" alt="Food">
+
+            <h3>بيتزا</h3>
+
+            <span class="price">$10</span>
+
+        </div>
+
+
+    </div>
+
+    <div class="menu-btn">
+
+        <a href="menu.html"
+           class="btn primary"
+           data-ckb="زیاتر"
+           data-ar="المزيد"
+           data-en="View Full Menu">
+            زیاتر
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= Reviews ================= -->
+
+<section id="reviews" class="reviews">
+
+    <div class="section-title">
+
+        <h2
+            data-ckb="ڕای کڕیاران"
+            data-ar="آراء العملاء"
+            data-en="Customer Reviews">
+            ڕای کڕیاران
+        </h2>
+
+    </div>
+
+    <div class="reviews-grid">
+
+        <div class="review-card">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p
+                data-ckb="خزمەتگوزاری زۆر باش و خواردنەکان زۆر خۆشن."
+                data-ar="خدمة ممتازة والطعام لذيذ جداً."
+                data-en="Excellent service and delicious food.">
+                خدمة ممتازة والطعام لذيذ جداً.
+            </p>
+
+            <h4>Ahmed</h4>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p
+                data-ckb="شوێنەکە زۆر پاکە و کارمەندەکان متمانەپێکراون."
+                data-ar="مكان نظيف وطاقم عمل رائع."
+                data-en="Clean place with a wonderful staff.">
+                مكان نظيف وطاقم عمل رائع.
+            </p>
+
+            <h4>Sara</h4>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p
+                data-ckb="باشترین چێشتخانە لە ناوچەکە."
+                data-ar="أفضل مطعم زرته، سأعود مرة أخرى."
+                data-en="One of the best restaurants I've visited.">
+                أفضل مطعم زرته، سأعود مرة أخرى.
+            </p>
+
+            <h4>Mohammed</h4>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= Contact ================= -->
+
+<section id="contact" class="contact">
+
+    <div class="section-title">
+
+        <h2
+            data-ckb="پەیوەندی"
+            data-ar="اتصل بنا"
+            data-en="Contact Us">
+            پەیوەندی
+        </h2>
+
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Contact Info -->
+
+        <div class="contact-info">
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3
+                    data-ckb="ناونیشان"
+                    data-ar="العنوان"
+                    data-en="Address">
+                    ناونیشان
+                </h3>
+
+                <p>Erbil - Iraq</p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3
+                    data-ckb="تەلەفۆن"
+                    data-ar="الهاتف"
+                    data-en="Phone">
+                    تەلەفۆن
+                </h3>
+
+                <p>07830929916</p>
+
+            </div>
+
+            <div class="contact-buttons">
+
+                <a href="https://wa.me/9647830929916"
+                   target="_blank"
+                   class="whatsapp-btn">
+
+                    <i class="fab fa-whatsapp"></i>
+
+                    <span
+                        data-ckb="واتساپ"
+                        data-ar="واتساب"
+                        data-en="WhatsApp">
+                        واتساب
+                    </span>
+
+                </a>
+
+                <a href="tel:07830929916"
+                   class="call-btn">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span
+                        data-ckb="پەیوەندی"
+                        data-ar="اتصل بنا"
+                        data-en="Call Us">
+                        اتصل بنا
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="contact-form">
+
+            <form id="whatsappForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="الاسم">
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="رقم الهاتف">
+
+                <textarea
+                    id="note"
+                    rows="6"
+                    placeholder="ملاحظتك"></textarea>
+
+                <button
+                    type="submit"
+                    class="btn primary">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <span
+                        data-ckb="ناردن"
+                        data-ar="إرسال"
+                        data-en="Send">
+                        إرسال
+                    </span>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Cart ================= -->
+
+<div id="cartPanel">
+
+    <div class="cart-header">
+
+        <h2
+            data-ckb="سەبەتە"
+            data-ar="السلة"
+            data-en="Shopping Cart">
+            السلة
+        </h2>
+
+        <button id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <div id="cartItems">
+
+        <!-- المنتجات تظهر هنا -->
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>
+
+            <span
+                data-ckb="کۆی گشتی"
+                data-ar="المجموع"
+                data-en="Total">
+                المجموع
+            </span>
+
+            :
+
+            <span id="cartTotal">$0</span>
+
+        </h3>
+
+
+<button id="orderWhatsApp" class="btn primary">
+    <i class="fab fa-whatsapp"></i>
+    اطلب الآن
+</button>
+
+
+
+
+        <button id="clearCart"
+                class="btn secondary">
+
+            <i class="fa-solid fa-trash"></i>
+
+            <span
+                data-ckb="سڕینەوەی هەموو"
+                data-ar="حذف الكل"
+                data-en="Clear Cart">
+                حذف الكل
+            </span>
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Cart Button -->
+
+<button id="cartButton">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span id="cartCount">0</span>
+
+</button>
+<!-- Toast Notification -->
+
+<div id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span
+        data-ckb="بەرهەم زیادکرا بۆ سەبەتە."
+        data-ar="تمت إضافة المنتج إلى السلة."
+        data-en="Item added to cart.">
+        تمت إضافة المنتج إلى السلة.
+    </span>
+
+</div>
+
+<!-- Scroll To Top -->
+
+<button id="scrollTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+<!-- ================= Footer ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo -->
+
+        <div class="footer-box">
+
+            <div class="footer-logo">
+
+                <i class="fa-solid fa-utensils"></i>
+
+                <h2
+                    data-ckb="چێشتخانەی شۆڕش"
+                    data-ar="مطعم شورش"
+                    data-en="Shorsh Restaurant">
+                    چێشتخانەی شۆڕش
+                </h2>
+
+            </div>
+
+            <p
+                data-ckb="باشترین شوێن بۆ چێژکردن لە خواردنی تازە و خزمەتگوزارییەکی نایاب."
+                data-ar="وجهتكم للاستمتاع بأشهى الأطباق الطازجة مع خدمة مميزة."
+                data-en="Your destination for fresh food and exceptional service.">
+                باشترین شوێن بۆ چێژکردن لە خواردنی تازە و خزمەتگوزارییەکی نایاب.
+            </p>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-box">
+
+            <h3
+                data-ckb="بەستەرە خێراکان"
+                data-ar="روابط سريعة"
+                data-en="Quick Links">
+                روابط سريعة
+            </h3>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <!-- Working Hours -->
+
+        <div class="footer-box">
+
+            <h3
+                data-ckb="کاتی کارکردن"
+                data-ar="أوقات الدوام"
+                data-en="Working Hours">
+                أوقات الدوام
+            </h3>
+
+            <p>Saturday - Thursday</p>
+            <p>10:00 AM - 12:00 AM</p>
+
+            <br>
+
+            <strong id="footerStatus">
+                🟢
+                <span
+                    data-ckb="کراوەیە"
+                    data-ar="مفتوح الآن"
+                    data-en="Open Now">
+                    مفتوح الآن
+                </span>
+            </strong>
+
+        </div>
+
+        <!-- Social -->
+
+        <div class="footer-box">
+
+            <h3
+                data-ckb="سۆشیال میدیا"
+                data-ar="تابعنا"
+                data-en="Follow Us">
+                تابعنا
+            </h3>
+
+            <div class="social-links">
+
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/3p4ad?igsh=MXV5aXk0ZjA5ZDhoYg==" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+                <a href="https://wa.me/9647830929916" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Shorsh Restaurant.
+            <span
+                data-ckb="هەموو مافەکان پارێزراون."
+                data-ar="جميع الحقوق محفوظة."
+                data-en="All Rights Reserved.">
+                جميع الحقوق محفوظة.
+            </span>
+        </p>
+
+    </div>
+
+</footer>
+
+</main>
+
+<script src="js/translations.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

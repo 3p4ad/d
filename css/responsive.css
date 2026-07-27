@@ -1,0 +1,457 @@
+/* ==========================================
+   responsive.css
+   Shorsh Restaurant
+========================================== */
+
+/* ==============================
+   Large Laptop
+============================== */
+
+@media (max-width:1400px){
+
+    #sidebar{
+
+        width:250px;
+
+    }
+
+    main{
+
+        margin-right:280px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:52px;
+
+    }
+
+}
+
+/* ==============================
+   Laptop
+============================== */
+
+@media (max-width:1200px){
+
+    section{
+
+        padding:90px 6%;
+
+    }
+
+    .hero-content{
+
+        max-width:700px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:46px;
+
+    }
+
+    .hero-content p{
+
+        font-size:18px;
+
+    }
+
+    .gallery-track img{
+
+        height:500px;
+
+    }
+
+}
+
+/* ==============================
+   Tablet
+============================== */
+
+@media (max-width:992px){
+
+    #menuBtn{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        position:fixed;
+
+        top:20px;
+
+        right:20px;
+
+        left:auto;
+
+        z-index:99999;
+
+    }
+
+    #sidebar{
+
+        right:-320px;
+
+        top:0;
+
+        width:300px;
+
+        height:100vh;
+
+        border-radius:0;
+
+        transition:.4s;
+
+    }
+
+    #sidebar.active{
+
+        right:0;
+
+    }
+
+    main{
+
+        margin-right:0;
+
+    }
+
+    .about-container,
+
+    .contact-container,
+
+    .video-grid,
+
+    .reviews-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hero{
+
+        height:90vh;
+
+    }
+
+}
+/* ==============================
+   Mobile
+============================== */
+
+@media (max-width:768px){
+
+    html{
+
+        font-size:15px;
+
+    }
+
+    section{
+
+        padding:70px 20px !important;
+
+    }
+
+    .section-title{
+
+        margin-bottom:40px;
+
+    }
+
+    .section-title h2{
+
+        font-size:30px;
+
+    }
+
+    .section-title p{
+
+        font-size:16px;
+
+    }
+
+    .hero{
+
+        height:100vh;
+
+    }
+
+    .hero-content{
+
+        width:100%;
+
+    }
+
+    .hero-content h1{
+
+        font-size:34px;
+
+        line-height:1.4;
+
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+
+        line-height:1.9;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        max-width:280px;
+
+    }
+
+    .gallery-track img{
+
+        height:300px;
+
+    }
+
+    .gallery-btn{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:16px;
+
+    }
+
+    .hours-container,
+
+    .menu-grid,
+
+    .menu-preview-grid,
+
+    .reviews-grid,
+
+    .video-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .food-card img{
+
+        height:220px;
+
+    }
+
+    .food-bottom{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:12px;
+
+    }
+
+    .price{
+
+        text-align:center;
+
+    }
+
+    .add-cart{
+
+        justify-content:center;
+
+        width:100%;
+
+    }
+
+    .contact-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .contact-buttons a{
+
+        width:100%;
+
+    }
+
+    #cartPanel{
+
+        width:100%;
+
+        left:-100%;
+
+    }
+
+    #cartPanel.active{
+
+        left:0;
+
+    }
+
+    #cartButton{
+
+        width:58px;
+
+        height:58px;
+
+        left:20px;
+
+        bottom:20px;
+
+    }
+
+    #scrollTop{
+
+        width:55px;
+
+        height:55px;
+
+        right:20px;
+
+        bottom:20px;
+
+    }
+
+    .footer{
+
+        text-align:center;
+
+    }
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+    }
+
+    .social-links{
+
+        justify-content:center;
+
+    }
+
+}
+
+/* ==============================
+   Small Mobile
+============================== */
+
+@media (max-width:480px){
+
+    html{
+
+        font-size:14px;
+
+    }
+
+    .logo h2{
+
+        font-size:22px;
+
+    }
+
+    .logo i{
+
+        font-size:28px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:28px;
+
+    }
+
+    .hero-content p{
+
+        font-size:15px;
+
+    }
+
+    .section-title h2{
+
+        font-size:26px;
+
+    }
+
+    .gallery-track img{
+
+        height:220px;
+
+    }
+
+    .food-card img{
+
+        height:190px;
+
+    }
+
+    .food-info{
+
+        padding:18px;
+
+    }
+
+    .food-info h3{
+
+        font-size:19px;
+
+    }
+
+    .food-info p{
+
+        font-size:14px;
+
+    }
+
+    .price{
+
+        font-size:20px;
+
+    }
+
+    .add-cart{
+
+        padding:12px;
+
+        font-size:14px;
+
+    }
+
+    .contact-form input,
+
+    .contact-form textarea{
+
+        font-size:15px;
+
+    }
+
+    .footer{
+
+        padding:50px 20px 20px;
+
+    }
+
+}

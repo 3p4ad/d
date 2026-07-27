@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>مینوو | Shorsh Restaurant</title>
+
+    <meta name="description"
+          content="مینووی چێشتخانەی شۆڕش">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= Header ================= -->
+
+<header id="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-utensils"></i>
+
+        <h2
+            data-ckb="شۆڕش"
+            data-ar="شورش"
+            data-en="Shorsh">
+            شۆڕش
+        </h2>
+
+    </div>
+
+    <button id="menuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <nav id="navMenu">
+
+        <a href="index.html">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span
+                data-ckb="سەرەکی"
+                data-ar="الرئيسية"
+                data-en="Home">
+                سەرەکی
+            </span>
+
+        </a>
+
+        <a href="about.html">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span
+                data-ckb="دەربارەی ئێمە"
+                data-ar="من نحن"
+                data-en="About">
+                دەربارەی ئێمە
+            </span>
+
+        </a>
+
+        <a class="active" href="menu.html">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <span
+                data-ckb="مینوو"
+                data-ar="المنيو"
+                data-en="Menu">
+                مینوو
+            </span>
+
+        </a>
+
+    </nav>
+
+    <div class="header-tools">
+
+        <select id="language">
+
+            <option value="ckb">کوردی</option>
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+
+        </select>
+
+        <button id="themeBtn">
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+<!-- ================= Main ================= -->
+
+<main>
+
+<!-- ================= Hero ================= -->
+
+<section class="page-hero menu-hero">
+
+    <div class="page-overlay">
+
+        <div class="page-content">
+
+            <h1
+                data-ckb="مینووی چێشتخانەی شۆڕش"
+                data-ar="منيو مطعم شورش"
+                data-en="Shorsh Restaurant Menu">
+
+                مینووی چێشتخانەی شۆڕش
+
+            </h1>
+
+            <p
+                data-ckb="لە ناو مینووی ئێمە باشترین خواردن و خواردنەوە هەڵبژێرە."
+                data-ar="اختر من أشهى الأطباق والمشروبات والحلويات."
+                data-en="Choose from our delicious dishes, drinks and desserts.">
+
+                لە ناو مینووی ئێمە باشترین خواردن و خواردنەوە هەڵبژێرە.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Filter ================= -->
+
+<section class="menu-filter">
+
+    <div class="section-title">
+
+        <h2
+            data-ckb="هاوپۆلکردنی مینوو"
+            data-ar="تصنيف المنيو"
+            data-en="Menu Categories">
+
+            هاوپۆلکردنی مینوو
+
+        </h2>
+
+    </div>
+
+    <div class="filter-buttons">
+
+        <button class="filter-btn active"
+                data-filter="all"
+                data-ckb="هەموو"
+                data-ar="الكل"
+                data-en="All">
+
+            هەموو
+
+        </button>
+
+        <button class="filter-btn"
+                data-filter="arabic">
+
+            🍖
+
+            <span
+                data-ckb="خواردنی عەرەبی"
+                data-ar="أكلات عربية"
+                data-en="Arabic Food">
+
+                خواردنی عەرەبی
+
+            </span>
+
+        </button>
+        <button class="filter-btn"
+                data-filter="eastern">
+
+            🍜
+
+            <span
+                data-ckb="خواردنی ڕۆژهەڵاتی"
+                data-ar="أكلات شرقية"
+                data-en="Eastern Food">
+
+                خواردنی ڕۆژهەڵاتی
+
+            </span>
+
+        </button>
+
+        <button class="filter-btn"
+                data-filter="western">
+
+            🍔
+
+            <span
+                data-ckb="خواردنی ڕۆژئاوایی"
+                data-ar="أكلات غربية"
+                data-en="Western Food">
+
+                خواردنی ڕۆژئاوایی
+
+            </span>
+
+        </button>
+
+        <button class="filter-btn"
+                data-filter="drinks">
+
+            🥤
+
+            <span
+                data-ckb="خواردنەوەکان"
+                data-ar="المشروبات"
+                data-en="Drinks">
+
+                خواردنەوەکان
+
+            </span>
+
+        </button>
+
+        <button class="filter-btn"
+                data-filter="desserts">
+
+            🍰
+
+            <span
+                data-ckb="شیرینی"
+                data-ar="الحلويات"
+                data-en="Desserts">
+
+                شیرینی
+
+            </span>
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= Menu Grid ================= -->
+
+<section class="menu-page">
+
+<div class="menu-grid">
+    <!-- ================= Arabic Food ================= -->
+
+<div class="food-card" data-category="arabic">
+
+    <img src="images/menu/arabic1.jpg" alt="كباب عراقي">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="کەبابی عێراقی"
+            data-ar="كباب عراقي"
+            data-en="Iraqi Kebab">
+            کەبابی عێراقی
+        </h3>
+
+        <p
+            data-ckb="کەبابی تازە لەگەڵ برنج و سەوزە."
+            data-ar="كباب عراقي طازج مع الأرز والخضار."
+            data-en="Fresh Iraqi kebab served with rice and vegetables.">
+            كەباب عراقي طازج مع الأرز والخضار.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$8</span>
+            <button class="add-cart">🛒 <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span></button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="arabic">
+
+    <img src="images/menu/arabic2.jpg" alt="شاورما">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="شاورما"
+            data-ar="شاورما"
+            data-en="Shawarma">
+            شاورما
+        </h3>
+
+        <p
+            data-ckb="شاورمای مریشک لەگەڵ سۆس و فرەنچ فرایز."
+            data-ar="شاورما دجاج مع الصوص والبطاطا."
+            data-en="Chicken shawarma with sauce and fries.">
+            شاورما دجاج مع الصوص والبطاطا.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$6</span>
+            <button class="add-cart">🛒 <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span></button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="arabic">
+
+    <img src="images/menu/arabic3.jpg" alt="دولمة">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="دۆڵمە"
+            data-ar="دولمة"
+            data-en="Dolma">
+            دۆڵمە
+        </h3>
+
+        <p
+            data-ckb="دۆڵمەی عێراقی بە تامی ڕەسەن."
+            data-ar="دولمة عراقية تقليدية."
+            data-en="Traditional Iraqi dolma.">
+            دولمة عراقية تقليدية.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$9</span>
+            <button class="add-cart">🛒 <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span></button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="arabic">
+
+    <img src="images/menu/arabic4.jpg" alt="تكة">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="تەکە"
+            data-ar="تكة"
+            data-en="Tikka">
+            تەکە
+        </h3>
+
+        <p
+            data-ckb="تەکەی گۆشتی تازە لەسەر ئاگر."
+            data-ar="تكة لحم مشوية على الفحم."
+            data-en="Grilled meat tikka over charcoal.">
+            تكة لحم مشوية على الفحم.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$10</span>
+            <button class="add-cart">🛒 <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span></button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="arabic">
+
+    <img src="images/menu/arabic5.jpg" alt="برياني">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="بریانی"
+            data-ar="برياني"
+            data-en="Biryani">
+            بریانی
+        </h3>
+
+        <p
+            data-ckb="بریانی بە گوشت و برنجی خۆشبۆ."
+            data-ar="برياني بالأرز واللحم والتوابل."
+            data-en="Biryani with rice, meat and spices.">
+            برياني بالأرز واللحم والتوابل.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$9</span>
+            <button class="add-cart">🛒 <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span></button>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Arabic Food (6 - 10) ================= -->
+
+<div class="food-card" data-category="arabic">
+
+    <img src="images/menu/arabic6.jpg" alt="مسگوف">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="مەسگوف"
+            data-ar="مسگوف"
+            data-en="Masgouf">
+            مەسگوف
+        </h3>
+
+        <p
+            data-ckb="ماسی مەسگوفی ئاگرکراو بە شێوازی عێراقی."
+            data-ar="سمك مسگوف مشوي على الطريقة العراقية."
+            data-en="Traditional Iraqi grilled Masgouf fish.">
+            سمك مسگوف مشوي على الطريقة العراقية.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$15</span>
+            <button class="add-cart">🛒 <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span></button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="arabic">
+
+    <img src="images/menu/arabic7.jpg" alt="قوزي">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="قوزی"
+            data-ar="قوزي"
+            data-en="Quzi">
+            قوزی
+        </h3>
+
+        <p
+            data-ckb="گۆشتی بەرخ لەگەڵ برنج و کشمیش."
+            data-ar="لحم خروف مع الأرز والمكسرات."
+            data-en="Lamb served with rice and nuts.">
+            لحم خروف مع الأرز والمكسرات.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$18</span>
+            <button class="add-cart">🛒 <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span></button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="arabic">
+
+    <img src="images/menu/arabic8.jpg" alt="حمص">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="حوموس"
+            data-ar="حمص"
+            data-en="Hummus">
+            حوموس
+        </h3>
+
+        <p
+            data-ckb="حوموسی تازە لەگەڵ نانی گەرم."
+            data-ar="حمص كريمي يقدم مع الخبز الساخن."
+            data-en="Creamy hummus served with warm bread.">
+            حمص كريمي يقدم مع الخبز الساخن.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$4</span>
+            <button class="add-cart">🛒 <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span></button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="arabic">
+
+    <img src="images/menu/arabic9.jpg" alt="فتوش">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="فەتووش"
+            data-ar="فتوش"
+            data-en="Fattoush">
+            فەتووش
+        </h3>
+
+        <p
+            data-ckb="زەڵاتەی تازە بە سۆسی تایبەت."
+            data-ar="سلطة فتوش طازجة مع الصلصة الخاصة."
+            data-en="Fresh Fattoush salad with special dressing.">
+            سلطة فتوش طازجة مع الصلصة الخاصة.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$5</span>
+            <button class="add-cart">🛒 <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span></button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="arabic">
+
+    <img src="images/menu/arabic10.jpg" alt="تبولة">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="تەبولە"
+            data-ar="تبولة"
+            data-en="Tabbouleh">
+            تەبولە
+        </h3>
+
+        <p
+            data-ckb="تەبولەی تازە بە سەوزە و لیمۆ."
+            data-ar="تبولة طازجة بالبقدونس والليمون."
+            data-en="Fresh tabbouleh with parsley and lemon.">
+            تبولة طازجة بالبقدونس والليمون.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$5</span>
+            <button class="add-cart">🛒 <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span></button>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Eastern Food (1 - 5) ================= -->
+
+<div class="food-card" data-category="eastern">
+
+    <img src="images/menu/eastern1.jpg" alt="Chinese Noodles">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="نودڵزی چینی"
+            data-ar="نودلز صيني"
+            data-en="Chinese Noodles">
+            نودڵزی چینی
+        </h3>
+
+        <p
+            data-ckb="نودڵزی تازە لەگەڵ سەوزە و سۆسی تایبەت."
+            data-ar="نودلز طازج مع الخضار والصوص الخاص."
+            data-en="Fresh noodles with vegetables and special sauce.">
+            نودلز طازج مع الخضار والصوص الخاص.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$9</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="eastern">
+
+    <img src="images/menu/eastern2.jpg" alt="Sushi">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="سوشی"
+            data-ar="سوشي"
+            data-en="Sushi">
+            سوشی
+        </h3>
+
+        <p
+            data-ckb="سوشیی ژاپۆنی بە ماسی تازە."
+            data-ar="سوشي ياباني محضر من السمك الطازج."
+            data-en="Japanese sushi made with fresh fish.">
+            سوشي ياباني محضر من السمك الطازج.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$15</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="eastern">
+
+    <img src="images/menu/eastern3.jpg" alt="Fried Rice">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="برنجی سوورکراو"
+            data-ar="أرز مقلي"
+            data-en="Fried Rice">
+            برنجی سوورکراو
+        </h3>
+
+        <p
+            data-ckb="برنجی سوورکراو لەگەڵ مریشک و سەوزە."
+            data-ar="أرز مقلي مع الدجاج والخضار."
+            data-en="Fried rice with chicken and vegetables.">
+            أرز مقلي مع الدجاج والخضار.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$8</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="eastern">
+
+    <img src="images/menu/eastern4.jpg" alt="Spring Rolls">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="سپرینگ ڕۆڵ"
+            data-ar="سبرنغ رول"
+            data-en="Spring Rolls">
+            سپرینگ ڕۆڵ
+        </h3>
+
+        <p
+            data-ckb="ڕۆڵی برژاو بە پڕکراوی سەوزە."
+            data-ar="لفائف مقرمشة محشوة بالخضار."
+            data-en="Crispy rolls stuffed with vegetables.">
+            لفائف مقرمشة محشوة بالخضار.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$6</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="eastern">
+
+    <img src="images/menu/eastern5.jpg" alt="Chicken Curry">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="کاری مریشک"
+            data-ar="كاري الدجاج"
+            data-en="Chicken Curry">
+            کاری مریشک
+        </h3>
+
+        <p
+            data-ckb="کاریی تایبەت لەگەڵ برنجی سپی."
+            data-ar="دجاج بالكاري مع الأرز الأبيض."
+            data-en="Chicken curry served with white rice.">
+            دجاج بالكاري مع الأرز الأبيض.
+        </p>
+        <div class="food-bottom">
+            <span class="price">$11</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Eastern Food (6 - 10) ================= -->
+
+<div class="food-card" data-category="eastern">
+
+    <img src="images/menu/eastern6.jpg" alt="Beef Teriyaki">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="تێریاکی گۆشت"
+            data-ar="لحم ترياكي"
+            data-en="Beef Teriyaki">
+            تێریاکی گۆشت
+        </h3>
+
+        <p
+            data-ckb="گۆشتی نەرم لەگەڵ سۆسی تێریاکی و برنج."
+            data-ar="لحم بقري بصوص الترياكي مع الأرز."
+            data-en="Tender beef with teriyaki sauce and rice.">
+            لحم بقري بصوص الترياكي مع الأرز.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$13</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="eastern">
+
+    <img src="images/menu/eastern7.jpg" alt="Pad Thai">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="پاد تای"
+            data-ar="باد تاي"
+            data-en="Pad Thai">
+            پاد تای
+        </h3>
+
+        <p
+            data-ckb="نودڵز بە سۆسی تایبەتی تایلەندی."
+            data-ar="نودلز تايلندي مع الصوص الخاص."
+            data-en="Thai noodles with signature sauce.">
+            نودلز تايلندي مع الصوص الخاص.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$12</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="eastern">
+
+    <img src="images/menu/eastern8.jpg" alt="Dim Sum">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="دیم سام"
+            data-ar="ديم سام"
+            data-en="Dim Sum">
+            دیم سام
+        </h3>
+
+        <p
+            data-ckb="لقمەی بخاری بە پڕکراوی گۆشت."
+            data-ar="قطع ديم سام مطهوة على البخار."
+            data-en="Steamed dim sum filled with meat.">
+            قطع ديم سام مطهوة على البخار.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$10</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="eastern">
+
+    <img src="images/menu/eastern9.jpg" alt="Ramen">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="رامێن"
+            data-ar="رامن"
+            data-en="Ramen">
+            رامێن
+        </h3>
+
+        <p
+            data-ckb="شۆربای رامێنی ژاپۆنی بە نودڵز."
+            data-ar="شوربة رامن يابانية بالنودلز."
+            data-en="Japanese ramen noodle soup.">
+            شوربة رامن يابانية بالنودلز.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$11</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="eastern">
+
+    <img src="images/menu/eastern10.jpg" alt="Sweet & Sour Chicken">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="مریشکی شیرین و ترش"
+            data-ar="دجاج حلو وحامض"
+            data-en="Sweet & Sour Chicken">
+            مریشکی شیرین و ترش
+        </h3>
+
+        <p
+            data-ckb="مریشکی برژاو لەگەڵ سۆسی شیرین و ترش."
+            data-ar="دجاج مقرمش مع صوص حلو وحامض."
+            data-en="Crispy chicken with sweet and sour sauce.">
+            دجاج مقرمش مع صوص حلو وحامض.
+        </p>
+        <div class="food-bottom">
+            <span class="price">$12</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Western Food (1 - 5) ================= -->
+
+<div class="food-card" data-category="western">
+
+    <img src="images/menu/western1.jpg" alt="Classic Burger">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="بەرگەری کلاسیکی"
+            data-ar="برغر كلاسيكي"
+            data-en="Classic Burger">
+            بەرگەری کلاسیکی
+        </h3>
+
+        <p
+            data-ckb="بەرگەر بە گۆشتی تازە، پەنیر و سەوزە."
+            data-ar="برغر بلحم طازج مع الجبن والخضار."
+            data-en="Fresh beef burger with cheese and vegetables.">
+            برغر بلحم طازج مع الجبن والخضار.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$9</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="western">
+
+    <img src="images/menu/western2.jpg" alt="Cheese Pizza">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="پیتزای پەنیر"
+            data-ar="بيتزا الجبن"
+            data-en="Cheese Pizza">
+            پیتزای پەنیر
+        </h3>
+
+        <p
+            data-ckb="پیتزای ئیتاڵی بە پەنیری موزاریلا."
+            data-ar="بيتزا إيطالية بجبنة الموزاريلا."
+            data-en="Italian pizza with mozzarella cheese.">
+            بيتزا إيطالية بجبنة الموزاريلا.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$11</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="western">
+
+    <img src="images/menu/western3.jpg" alt="Steak">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="ستێک"
+            data-ar="ستيك"
+            data-en="Steak">
+            ستێک
+        </h3>
+
+        <p
+            data-ckb="ستێکی گۆشت لەگەڵ سۆس و پەتاتە."
+            data-ar="ستيك لحم مشوي مع البطاطا والصوص."
+            data-en="Grilled steak served with potatoes and sauce.">
+            ستيك لحم مشوي مع البطاطا والصوص.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$18</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="western">
+
+    <img src="images/menu/western4.jpg" alt="Hot Dog">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="هات دۆگ"
+            data-ar="هوت دوغ"
+            data-en="Hot Dog">
+            هات دۆگ
+        </h3>
+
+        <p
+            data-ckb="هات دۆگ لەگەڵ سۆس و پەتاتە."
+            data-ar="هوت دوغ مع الصوص والبطاطا."
+            data-en="Hot dog served with sauce and fries.">
+            هوت دوغ مع الصوص والبطاطا.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$7</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="western">
+
+    <img src="images/menu/western5.jpg" alt="Fried Chicken">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="مریشکی برژاو"
+            data-ar="دجاج مقلي"
+            data-en="Fried Chicken">
+            مریشکی برژاو
+        </h3>
+
+        <p
+            data-ckb="مریشکی برژاوی ترد لەگەڵ پەتاتە."
+            data-ar="دجاج مقلي مقرمش مع البطاطا."
+            data-en="Crispy fried chicken with fries.">
+            دجاج مقلي مقرمش مع البطاطا.
+        </p>
+        <div class="food-bottom">
+            <span class="price">$10</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Western Food (6 - 10) ================= -->
+
+<div class="food-card" data-category="western">
+
+    <img src="images/menu/western6.jpg" alt="Spaghetti Bolognese">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="سپاگەتی بۆلۆنیز"
+            data-ar="سباغيتي بولونيز"
+            data-en="Spaghetti Bolognese">
+            سپاگەتی بۆلۆنیز
+        </h3>
+
+        <p
+            data-ckb="سپاگەتی لەگەڵ سۆسی گۆشت و پەنیر."
+            data-ar="سباغيتي مع صلصة اللحم وجبن البارميزان."
+            data-en="Spaghetti with meat sauce and parmesan cheese.">
+            سباغيتي مع صلصة اللحم وجبن البارميزان.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$12</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="western">
+
+    <img src="images/menu/western7.jpg" alt="Lasagna">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="لازانیا"
+            data-ar="لازانيا"
+            data-en="Lasagna">
+            لازانیا
+        </h3>
+
+        <p
+            data-ckb="لازانیای ئیتاڵی بە پەنیر و گۆشت."
+            data-ar="لازانيا إيطالية بالجبن واللحم."
+            data-en="Italian lasagna with cheese and meat.">
+            لازانيا إيطالية بالجبن واللحم.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$13</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="western">
+
+    <img src="images/menu/western8.jpg" alt="Club Sandwich">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="ساندویچی کلوب"
+            data-ar="كلوب ساندويتش"
+            data-en="Club Sandwich">
+            ساندویچی کلوب
+        </h3>
+
+        <p
+            data-ckb="ساندویچی کلوب لەگەڵ مریشک و پەتاتە."
+            data-ar="كلوب ساندويتش مع الدجاج والبطاطا."
+            data-en="Club sandwich served with chicken and fries.">
+            كلوب ساندويتش مع الدجاج والبطاطا.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$9</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="western">
+
+    <img src="images/menu/western9.jpg" alt="Fish and Chips">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="ماسی و پەتاتە"
+            data-ar="سمك وبطاطا"
+            data-en="Fish and Chips">
+            ماسی و پەتاتە
+        </h3>
+
+        <p
+            data-ckb="ماسی برژاو لەگەڵ پەتاتەی ترد."
+            data-ar="سمك مقلي مع البطاطا المقرمشة."
+            data-en="Crispy fried fish served with fries.">
+            سمك مقلي مع البطاطا المقرمشة.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$14</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="western">
+
+    <img src="images/menu/western10.jpg" alt="Chicken Alfredo">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="ئەلفرێدۆی مریشک"
+            data-ar="دجاج ألفريدو"
+            data-en="Chicken Alfredo">
+            ئەلفرێدۆی مریشک
+        </h3>
+
+        <p
+            data-ckb="پاستای ئەلفرێدۆ لەگەڵ مریشک و سۆسی کریمی."
+            data-ar="باستا ألفريدو مع الدجاج والصوص الكريمي."
+            data-en="Creamy Alfredo pasta with chicken.">
+            باستا ألفريدو مع الدجاج والصوص الكريمي.
+        </p>
+        <div class="food-bottom">
+            <span class="price">$13</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Drinks (1 - 5) ================= -->
+
+<div class="food-card" data-category="drinks">
+
+    <img src="images/menu/drink1.jpg" alt="Orange Juice">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="ئاوی پرتەقاڵ"
+            data-ar="عصير البرتقال"
+            data-en="Orange Juice">
+            ئاوی پرتەقاڵ
+        </h3>
+
+        <p
+            data-ckb="ئاوی پرتەقاڵی سروشتی و تازە."
+            data-ar="عصير برتقال طبيعي طازج."
+            data-en="Fresh natural orange juice.">
+            عصير برتقال طبيعي طازج.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$3</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="drinks">
+
+    <img src="images/menu/drink2.jpg" alt="Lemon Juice">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="ئاوی لیمۆ"
+            data-ar="عصير الليمون"
+            data-en="Lemon Juice">
+            ئاوی لیمۆ
+        </h3>
+
+        <p
+            data-ckb="ئاوی لیمۆی تازە و سارد."
+            data-ar="عصير ليمون طازج ومنعش."
+            data-en="Fresh and refreshing lemon juice.">
+            عصير ليمون طازج ومنعش.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$3</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="drinks">
+
+    <img src="images/menu/drink3.jpg" alt="Mojito">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="مۆجیتۆ"
+            data-ar="موهيتو"
+            data-en="Mojito">
+            مۆجیتۆ
+        </h3>
+
+        <p
+            data-ckb="مۆجیتۆی سارد بە نعناع و لیمۆ."
+            data-ar="موهيتو بارد بالنعناع والليمون."
+            data-en="Cold mojito with mint and lemon.">
+            موهيتو بارد بالنعناع والليمون.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$4</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="drinks">
+
+    <img src="images/menu/drink4.jpg" alt="Cola">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="کۆلا"
+            data-ar="كولا"
+            data-en="Cola">
+            کۆلا
+        </h3>
+
+        <p
+            data-ckb="خواردنەوەی گازی سارد."
+            data-ar="مشروب غازي بارد."
+            data-en="Cold soft drink.">
+            مشروب غازي بارد.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$2</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="drinks">
+
+    <img src="images/menu/drink5.jpg" alt="Tea">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="چای"
+            data-ar="شاي"
+            data-en="Tea">
+            چای
+        </h3>
+
+        <p
+            data-ckb="چایەکی گەرم بە تامی ڕەسەن."
+            data-ar="شاي ساخن بطعم مميز."
+            data-en="Hot tea with a rich flavor.">
+            شاي ساخن بطعم مميز.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$2</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Drinks (6 - 10) ================= -->
+
+<div class="food-card" data-category="drinks">
+
+    <img src="images/menu/drink6.jpg" alt="Coffee">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="قاوە"
+            data-ar="قهوة"
+            data-en="Coffee">
+            قاوە
+        </h3>
+
+        <p
+            data-ckb="قاوەی تازە بە بۆنێکی خۆش."
+            data-ar="قهوة طازجة محضرة باحتراف."
+            data-en="Freshly brewed coffee.">
+            قهوة طازجة محضرة باحتراف.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$3</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="drinks">
+
+    <img src="images/menu/drink7.jpg" alt="Cappuccino">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="کاپوچینۆ"
+            data-ar="كابتشينو"
+            data-en="Cappuccino">
+            کاپوچینۆ
+        </h3>
+
+        <p
+            data-ckb="کاپوچینۆی گەرم بە کفی شیر."
+            data-ar="كابتشينو ساخن مع رغوة الحليب."
+            data-en="Hot cappuccino with milk foam.">
+            كابتشينو ساخن مع رغوة الحليب.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$4</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="drinks">
+
+    <img src="images/menu/drink8.jpg" alt="Milkshake">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="میلکشەیک"
+            data-ar="ميلك شيك"
+            data-en="Milkshake">
+            میلکشەیک
+        </h3>
+
+        <p
+            data-ckb="میلکشەیکی سارد بە هەڵبژاردنی تام."
+            data-ar="ميلك شيك بارد بنكهات متنوعة."
+            data-en="Cold milkshake in assorted flavors.">
+            ميلك شيك بارد بنكهات متنوعة.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$5</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="drinks">
+
+    <img src="images/menu/drink9.jpg" alt="Iced Tea">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="چای سارد"
+            data-ar="شاي مثلج"
+            data-en="Iced Tea">
+            چای سارد
+        </h3>
+
+        <p
+            data-ckb="چای ساردی خۆش بە لیمۆ."
+            data-ar="شاي مثلج منعش مع الليمون."
+            data-en="Refreshing iced tea with lemon.">
+            شاي مثلج منعش مع الليمون.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$3</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="drinks">
+
+    <img src="images/menu/drink10.jpg" alt="Mineral Water">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="ئاوی کانزا"
+            data-ar="مياه معدنية"
+            data-en="Mineral Water">
+            ئاوی کانزا
+        </h3>
+
+        <p
+            data-ckb="ئاوی پاک و سارد."
+            data-ar="مياه معدنية باردة ونقية."
+            data-en="Pure chilled mineral water.">
+            مياه معدنية باردة ونقية.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$1</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">إضافة</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Desserts (1 - 5) ================= -->
+
+<div class="food-card" data-category="desserts">
+
+    <img src="images/menu/dessert1.jpg" alt="Chocolate Cake">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="کێکی چۆکلێت"
+            data-ar="كيكة الشوكولاتة"
+            data-en="Chocolate Cake">
+            کێکی چۆکلێت
+        </h3>
+
+        <p
+            data-ckb="کێکی نەرم بە چۆکلێتی خاو."
+            data-ar="كيكة شوكولاتة طازجة وغنية."
+            data-en="Fresh rich chocolate cake.">
+            كيكة شوكولاتة طازجة وغنية.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$5</span>
+
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span
+                    data-ckb="زیادکردن"
+                    data-ar="إضافة"
+                    data-en="Add">
+                    إضافة
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="desserts">
+
+    <img src="images/menu/dessert2.jpg" alt="Cheesecake">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="چیزکێک"
+            data-ar="تشيز كيك"
+            data-en="Cheesecake">
+            چیزکێک
+        </h3>
+
+        <p
+            data-ckb="چیزکێکی کریمی بە تامی نایاب."
+            data-ar="تشيز كيك كريمي لذيذ."
+            data-en="Creamy delicious cheesecake.">
+            تشيز كيك كريمي لذيذ.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$6</span>
+
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span
+                    data-ckb="زیادکردن"
+                    data-ar="إضافة"
+                    data-en="Add">
+                    إضافة
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="desserts">
+
+    <img src="images/menu/dessert3.jpg" alt="Baklava">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="باقلەوا"
+            data-ar="بقلاوة"
+            data-en="Baklava">
+            باقلەوا
+        </h3>
+
+        <p
+            data-ckb="باقلەوای ڕۆژهەڵاتی بە پستە."
+            data-ar="بقلاوة شرقية بالفستق."
+            data-en="Traditional pistachio baklava.">
+            بقلاوة شرقية بالفستق.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$4</span>
+
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span
+                    data-ckb="زیادکردن"
+                    data-ar="إضافة"
+                    data-en="Add">
+                    إضافة
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="desserts">
+
+    <img src="images/menu/dessert4.jpg" alt="Ice Cream">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="ئاوەسارد"
+            data-ar="آيس كريم"
+            data-en="Ice Cream">
+            ئاوسارد
+        </h3>
+
+        <p
+            data-ckb="ئاوەسارد بە چەندین تام."
+            data-ar="آيس كريم بنكهات متنوعة."
+            data-en="Ice cream in various flavors.">
+            آيس كريم بنكهات متنوعة.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$3</span>
+
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span
+                    data-ckb="زیادکردن"
+                    data-ar="إضافة"
+                    data-en="Add">
+                    إضافة
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="desserts">
+
+    <img src="images/menu/dessert5.jpg" alt="Kunafa">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="کونافە"
+            data-ar="كنافة"
+            data-en="Kunafa">
+            کونافە
+        </h3>
+        <p
+            data-ckb="کونافەی گەرم بە پەنیر."
+            data-ar="كنافة ساخنة بالجبن."
+            data-en="Hot cheese kunafa.">
+            كنافة ساخنة بالجبن.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$5</span>
+
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span
+                    data-ckb="زیادکردن"
+                    data-ar="إضافة"
+                    data-en="Add">
+                    إضافة
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Desserts (6 - 10) ================= -->
+
+<div class="food-card" data-category="desserts">
+
+    <img src="images/menu/dessert6.jpg" alt="Tiramisu">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="تیرامیسوو"
+            data-ar="تيراميسو"
+            data-en="Tiramisu">
+            تیرامیسوو
+        </h3>
+
+        <p
+            data-ckb="شیرینی ئیتاڵی بە قاوە و کریم."
+            data-ar="حلوى إيطالية بالقهوة والكريمة."
+            data-en="Italian dessert with coffee and cream.">
+            حلوى إيطالية بالقهوة والكريمة.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$6</span>
+
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">
+                    إضافة
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="desserts">
+
+    <img src="images/menu/dessert7.jpg" alt="Donut">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="دۆنات"
+            data-ar="دونات"
+            data-en="Donut">
+            دۆنات
+        </h3>
+
+        <p
+            data-ckb="دۆناتی تازە بە چۆکلێت."
+            data-ar="دونات طازجة مغطاة بالشوكولاتة."
+            data-en="Fresh donut topped with chocolate.">
+            دونات طازجة مغطاة بالشوكولاتة.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$3</span>
+
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">
+                    إضافة
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="desserts">
+
+    <img src="images/menu/dessert8.jpg" alt="Pancakes">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="پانکێک"
+            data-ar="بان كيك"
+            data-en="Pancakes">
+            پانکێک
+        </h3>
+
+        <p
+            data-ckb="پانکێکی گەرم بە عەسەل و میوە."
+            data-ar="بان كيك مع العسل والفواكه."
+            data-en="Warm pancakes with honey and fruits.">
+            بان كيك مع العسل والفواكه.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$5</span>
+
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">
+                    إضافة
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="desserts">
+
+    <img src="images/menu/dessert9.jpg" alt="Brownie">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="براونی"
+            data-ar="براوني"
+            data-en="Brownie">
+            براونی
+        </h3>
+
+        <p
+            data-ckb="براونی بە چۆکلێتی خاو."
+            data-ar="براوني بالشوكولاتة الداكنة."
+            data-en="Rich dark chocolate brownie.">
+            براوني بالشوكولاتة الداكنة.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$4</span>
+
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">
+                    إضافة
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="food-card" data-category="desserts">
+
+    <img src="images/menu/dessert10.jpg" alt="Fruit Salad">
+
+    <div class="food-info">
+
+        <h3
+            data-ckb="زەڵاتەی میوە"
+            data-ar="سلطة فواكه"
+            data-en="Fruit Salad">
+            زەڵاتەی میوە
+        </h3>
+
+        <p
+            data-ckb="تێکەڵەی میوەی تازەی موسمی."
+            data-ar="سلطة فواكه طازجة ومتنوعة."
+            data-en="Fresh seasonal fruit salad.">
+            سلطة فواكه طازجة ومتنوعة.
+        </p>
+
+        <div class="food-bottom">
+            <span class="price">$5</span>
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span data-ckb="زیادکردن" data-ar="إضافة" data-en="Add">
+                    إضافة
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+</section>
+
+<!-- ================= Shopping Cart ================= -->
+
+<div id="cartPanel">
+
+    <div class="cart-header">
+
+        <h2
+            data-ckb="سەبەتە"
+            data-ar="السلة"
+            data-en="Shopping Cart">
+            السلة
+        </h2>
+
+        <button id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <div id="cartItems">
+
+        <!-- Cart Items -->
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>
+
+            <span
+                data-ckb="کۆی گشتی"
+                data-ar="المجموع"
+                data-en="Total">
+                المجموع
+            </span>
+
+            :
+
+            <span id="cartTotal">$0</span>
+
+        </h3>
+
+
+
+<button id="orderWhatsApp" class="btn primary">
+    <i class="fab fa-whatsapp"></i>
+    اطلب الآن
+</button>
+
+
+
+
+        <button id="clearCart"
+                class="btn secondary">
+
+            <i class="fa-solid fa-trash"></i>
+
+            <span
+                data-ckb="سڕینەوەی هەموو"
+                data-ar="حذف الكل"
+                data-en="Clear Cart">
+                حذف الكل
+            </span>
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Floating Cart Button -->
+
+<button id="cartButton">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span id="cartCount">0</span>
+
+</button>
+
+<!-- Toast -->
+
+<div id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span
+        data-ckb="بەرهەم زیادکرا بۆ سەبەتە."
+        data-ar="تمت إضافة المنتج إلى السلة."
+        data-en="Item added to cart.">
+        تمت إضافة المنتج إلى السلة.
+    </span>
+
+</div>
+
+<!-- Scroll To Top -->
+
+<button id="scrollTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ================= Footer ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h2>
+
+                <i class="fa-solid fa-utensils"></i>
+
+                Shorsh Restaurant
+
+            </h2>
+
+            <p
+                data-ckb="سوپاس بۆ سەردانەکەتان."
+                data-ar="شكراً لزيارتكم."
+                data-en="Thank you for visiting us.">
+                شكراً لزيارتكم.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3
+                data-ckb="بەستەرەکان"
+                data-ar="الروابط"
+                data-en="Links">
+                الروابط
+            </h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3
+                data-ckb="پەیوەندی"
+                data-ar="تواصل"
+                data-en="Contact">
+                تواصل
+            </h3>
+
+            <p>07830929916</p>
+
+            <div class="social-links">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="https://www.instagram.com/3p4ad?igsh=MXV5aXk0ZjA5ZDhoYg==" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="https://wa.me/9647830929916" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Shorsh Restaurant.
+            <span
+                data-ckb="هەموو مافەکان پارێزراون."
+                data-ar="جميع الحقوق محفوظة."
+                data-en="All Rights Reserved.">
+                جميع الحقوق محفوظة.
+            </span>
+        </p>
+
+    </div>
+
+</footer>
+
+</main>
+
+<script src="js/translations.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
